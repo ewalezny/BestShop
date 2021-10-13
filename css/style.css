@@ -26,6 +26,7 @@
     top: 0;
     border-bottom: 1px solid var(--color-gray);
     box-shadow: 0 3px 6px var(--color-gray);
+    z-index: 1;
 }
 
 .header .container {
@@ -39,13 +40,14 @@
     font-size: 32px;
     font-weight: 300;
     color: var(--color-primary);
+    text-decoration: none;
 }
 
 .header nav {
     display: flex;
 }
 
-.header a {
+.header nav a {
     font-family: var(--font-open-sans);
     font-size: 11px;
     font-weight: 700;
@@ -57,7 +59,41 @@
     margin: 0 40px;
 }
 
-.header a:hover {
+.header nav a:hover {
     color: var(--color-black);
     border-bottom: 4px solid var(--color-primary);
+}
+
+.opening {
+    background: url("../assets/Background.png") no-repeat bottom;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.opening h1 {
+    font-family: var(--font-raleway);
+    font-size: 49px;
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+
+.opening p {
+    font-family: var(--font-open-sans);
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.btn {
+    background: var(--color-primary);
+    padding: 22px 157px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 40px;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 16px;
+    font-family: var(--font-open-sans);
+    font-weight: 700;
 }
