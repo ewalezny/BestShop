@@ -323,3 +323,118 @@
     bottom: 0;
     left: 0;
 }
+
+.pricing h2 {
+    font-family: var(--font-raleway);
+    font-size: 36px;
+    text-align: center;
+    padding: 100px 0 50px;
+}
+
+.pricing__boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 180px;
+}
+
+.pricing--box {
+    width: 372px;
+    height: 461px;
+    border: 1px solid var(--color-redish);
+    border-radius: 18px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing h3 {
+    font-family: var(--font-raleway);
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 34px;
+}
+
+.pricing h4 {
+    font-family: var(--font-open-sans);
+    font-size: 46px;
+    font-weight: 300;
+    color: var(--color-redish);
+    line-height: 64px;
+    padding: 14px 0 69px 0;
+}
+
+.pricing ul li {
+    font-family: var(--font-open-sans);
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.ul__green {
+    list-style-image: url("../assets/Ckechmark-1.svg");
+}
+
+.ul__red {
+    list-style-image: url("../assets/Close.svg");
+}
+
+.btn__small {
+    padding: 16px 57px;
+    position: absolute;
+    box-shadow: none;
+    font-size: 13px;
+    bottom: -25px;
+}
+
+.btn__redish {
+    background: var(--color-redish);
+}
+
+.btn__primary {
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+}
+
+.btn__green {
+    background: var(--color-green);
+}
+
+.pricing__box-3 {
+    border-color: var(--color-green);
+}
+
+.pricing__box-3 h4 {
+    color: var(--color-green);
+    padding-bottom: 5px;
+}
+
+.pricing__box-3 h5 {
+    font-family: var(--font-raleway);
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.pricing__box-2 {
+    border-color: var(--color-primary);
+    box-shadow: 5px 10px 27px var(--color-primary-shadow);
+    width: 405px;
+    height: 500px;
+}
+
+.pricing__box-2 h4 {
+    color: var(--color-primary);
+    padding-bottom: 5px;
+}
+
+.pricing__box-2 h5 {
+    font-family: var(--font-raleway);
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 60px;
+}
+
+.pricing__box-2 ul li {
+    padding-bottom: 25px;
+}
