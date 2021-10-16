@@ -435,6 +435,12 @@
     padding-bottom: 60px;
 }
 
+.pricing ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .pricing__box-2 ul li {
     padding-bottom: 25px;
 }
