@@ -1,0 +1,62 @@
+@use "sass:math";
+
+$columns: 12;
+$column-base-width: math.div(100%, $columns);
+
+$breakpoint-sm: 768px;
+$breakpoint-md: 1300px;
+$breakpoint-lg: 1600px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+
+  [class*="col-"] {
+    min-height: 1px;
+    padding: 0.5rem;
+  }
+
+  @for $i from 1 through $columns {
+    .col-xs-#{$i} {
+      width: $column-base-width * $i;
+    }
+  }
+
+  @for $i from 1 through $columns {
+    @media (min-width: $breakpoint-sm) {
+      .col-sm-#{$i} {
+        width: $column-base-width * $i;
+      }
+    }
+  }
+
+  @for $i from 1 through $columns {
+    @media (min-width: $breakpoint-md) {
+      .col-md-#{$i} {
+        width: $column-base-width * $i;
+      }
+    }
+  }
+
+  @for $i from 1 through $columns {
+    @media (min-width: $breakpoint-lg) {
+      .col-lg-#{$i} {
+        width: $column-base-width * $i;
+      }
+    }
+  }
+}

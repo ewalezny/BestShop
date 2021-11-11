@@ -1,0 +1,17 @@
+.btn {
+  background: $color-primary;
+  padding: 22px 157px;
+  box-shadow: 5px 10px 14px #07ACE629;
+  border-radius: 40px;
+  text-decoration: none;
+  color: $color-white;
+  font-size: 16px;
+  font-family: $font-open-sans;
+  font-weight: 700;
+
+  @include xs {
+    padding: 22px 92px;
+    display: block;
+    margin: 0 15px;
+  }
+}
