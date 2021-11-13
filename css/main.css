@@ -1354,4 +1354,29 @@ label[for=email] {
   display: flex;
   justify-content: flex-end;
 }
+
+.footer {
+  background: #F7F7F7;
+  box-shadow: 0 -5px 40px #00000029;
+  padding: 20px 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .logo {
+  font-size: 1.625rem;
+}
+
+.copyright p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6875rem;
+  color: #A5A5A5;
+  padding-top: 6px;
+}
+
+.facebook {
+  margin-left: 20px;
+}
 /*# sourceMappingURL=main.css.map */

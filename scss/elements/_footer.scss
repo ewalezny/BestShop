@@ -1,0 +1,28 @@
+.footer {
+  background: $color-light-gray;
+  box-shadow: 0 -5px 40px #00000029;
+  padding: 20px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.625rem;
+  }
+}
+
+.copyright {
+  p {
+    font-family: $font-open-sans;
+    font-size: 0.6875rem;
+    color: $color-gray;
+    padding-top: 6px;
+  }
+}
+
+.facebook {
+  margin-left: 20px;
+}
