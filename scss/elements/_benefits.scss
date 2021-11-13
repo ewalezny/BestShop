@@ -4,7 +4,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    padding-bottom: 65px;
+    padding-bottom: 120px;
   }
 
   &__box-1,
@@ -23,7 +23,7 @@
   &__box-1 {
     margin-top: 150px;
 
-    @include xs {
+    @include sm {
       flex-direction: column-reverse;
       margin: 40px 15px 20px;
       padding: 0 15px;
@@ -35,7 +35,7 @@
     margin: 37px 0;
     padding: 0 70px;
 
-    @include xs {
+    @include sm {
       flex-direction: column;
       justify-content: center;
       margin: 20px 15px;
@@ -49,7 +49,7 @@
     height: 370px;
     margin-bottom: 150px;
 
-    @include xs {
+    @include sm {
       flex-direction: column;
       margin: 20px 0 40px;
     }
@@ -66,7 +66,7 @@
     font-size: 1rem;
     margin-bottom: 50px;
 
-    @include xs {
+    @include sm {
       margin: 10px 0;
     }
   }
@@ -75,7 +75,7 @@
     margin-left: 35px;
     width: 416px;
 
-    @include xs {
+    @include sm {
       width: auto;
       margin: 0 20px;
     }
@@ -87,7 +87,7 @@
       height: 4px;
       background: $color-redish;
 
-      @include xs {
+      @include sm {
         display: none;
       }
     }
@@ -97,7 +97,7 @@
     margin-right: 20px;
     width: 416px;
 
-    @include xs {
+    @include sm {
       width: auto;
       margin: 0 20px;
     }
@@ -109,7 +109,7 @@
       height: 4px;
       background: $color-primary;
 
-      @include xs {
+      @include sm {
         display: none;
       }
     }
@@ -126,7 +126,7 @@
     justify-content: center;
     padding: 0 70px;
 
-    @include xs {
+    @include sm {
       width: auto;
       margin: 0 15px;
       padding: 50px 30px 30px 30px;
@@ -139,7 +139,7 @@
       height: 4px;
       background: $color-green;
 
-      @include xs {
+      @include sm {
         display: none;
       }
     }
@@ -149,7 +149,7 @@
     padding-right: 110px;
     padding-top: 100px;
 
-    @include xs {
+    @include sm {
       padding: 30px 50px;
     }
 
@@ -165,7 +165,7 @@
       top: 50px;
       right: 150px;
 
-      @include xs {
+      @include sm {
         transform: scale(0.5) rotate(45deg);
         top: -40px;
         right: -10px;
@@ -185,7 +185,7 @@
       bottom: 0;
       left: 0;
 
-      @include xs {
+      @include sm {
         transform: scale(0.4);
         top: -100px;
         left: -90px;
@@ -205,7 +205,7 @@
     height: auto;
     margin-right: 70px;
 
-    @include xs {
+    @include sm {
       width: 190px;
       margin-right: 0;
     }
@@ -218,7 +218,7 @@
     border-radius: 5px;
     border: 1px solid #E8E9ED;
 
-    @include xs {
+    @include sm {
       width: auto;
       height: auto;
       margin: 0 15px 20px;
@@ -232,7 +232,7 @@
       margin-top: 100px;
       margin-left: 62px;
 
-      @include xs {
+      @include sm {
         margin: 20px auto -50px;
       }
     }
