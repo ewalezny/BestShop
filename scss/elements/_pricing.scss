@@ -1,0 +1,142 @@
+.pricing {
+  h2 {
+    font-family: $font-raleway;
+    font-size: 2.25rem;
+    text-align: center;
+    padding: 100px 0 50px;
+
+    @include xs {
+      padding: 55px 0 15px;
+    }
+  }
+
+  &__boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 180px;
+
+    @include xs {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &--box {
+    width: 372px;
+    height: 461px;
+    border: 1px solid $color-redish;
+    border-radius: 18px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include xs {
+      flex-direction: row;
+      justify-content: center;
+      height: 250px;
+      width: auto;
+    }
+  }
+
+  &__name {
+    @include xs {
+      padding-left: 45px;
+    }
+  }
+
+  h3 {
+    font-family: $font-raleway;
+    font-size: 1.25rem;
+    font-weight: 800;
+    padding-top: 34px;
+  }
+
+  h4 {
+    font-family: $font-open-sans;
+    font-size: 2.875rem;
+    font-weight: 300;
+    color: $color-redish;
+    line-height: 4rem;
+    padding: 14px 0 69px 0;
+  }
+
+  &__ul {
+    @include xs {
+      margin: 25px 15px 25px 45px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include xs {
+      align-items: flex-start;
+    }
+
+    li {
+      font-family: $font-open-sans;
+      font-size: 0.875rem;
+      padding-bottom: 20px;
+    }
+  }
+
+  .ul__green {
+    list-style-image: url("../assets/Ckechmark-1.svg");
+  }
+
+  .ul__red {
+    list-style-image: url("../assets/Close.svg");
+  }
+
+  &__box-3 {
+    border-color: $color-green;
+
+    h4 {
+      color: $color-green;
+      padding-bottom: 5px;
+    }
+
+    h5 {
+      font-family: $font-raleway;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__box-2 {
+    border-color: $color-primary;
+    box-shadow: 5px 10px 27px $color-primary-shadow;
+    width: 405px;
+    height: 500px;
+
+    @include xs {
+      width: auto;
+      height: 280px;
+      margin: 55px 0;
+    }
+
+    ul {
+      li {
+        padding-bottom: 25px;
+      }
+    }
+
+    h4 {
+      color: $color-primary;
+      padding-bottom: 5px;
+    }
+
+    h5 {
+      font-family: $font-raleway;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding-bottom: 60px;
+    }
+  }
+}

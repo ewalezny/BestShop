@@ -4,6 +4,7 @@
   &__content {
     display: flex;
     flex-direction: column;
+    padding-bottom: 65px;
   }
 
   &__box-1,
@@ -220,7 +221,7 @@
     @include xs {
       width: auto;
       height: auto;
-      margin: 0 15px;
+      margin: 0 15px 20px;
       display: flex;
       justify-content: center;
     }

@@ -15,3 +15,23 @@
     margin: 0 15px;
   }
 }
+
+.btn__small {
+  padding: 16px 57px;
+  position: absolute;
+  box-shadow: none;
+  font-size: 0.8125rem;
+  bottom: -25px;
+}
+
+.btn__redish {
+  background: $color-redish;
+}
+
+.btn__primary {
+  box-shadow: 5px 10px 14px $color-primary-shadow;
+}
+
+.btn__green {
+  background: $color-green;
+}
