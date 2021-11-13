@@ -40,7 +40,7 @@
       margin: 0 40px;
       border-bottom: 4px solid transparent;
 
-      @include sm {
+      @include md {
         &:hover {
           color: $color-black;
           border-color: $color-primary;

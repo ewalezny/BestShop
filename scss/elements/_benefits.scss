@@ -9,11 +9,10 @@
 
   &__box-1,
   &__box-2 {
-    padding: 105px 0;
+    padding: 90px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 370px;
     background: $color-white;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
@@ -26,20 +25,20 @@
     @include sm {
       flex-direction: column-reverse;
       margin: 40px 15px 20px;
-      padding: 0 15px;
+      padding: 30px 15px;
       justify-content: center;
     }
   }
 
   &__box-2 {
     margin: 37px 0;
-    padding: 0 70px;
+    padding: 70px;
 
     @include sm {
       flex-direction: column;
       justify-content: center;
       margin: 20px 15px;
-      padding: 0 15px;
+      padding: 30px 15px;
     }
   }
 
@@ -116,7 +115,6 @@
   }
 
   &__box__text-3 {
-    width: 623px;
     height: 370px;
     background: $color-white;
     border-radius: 5px;
@@ -127,7 +125,6 @@
     padding: 0 70px;
 
     @include sm {
-      width: auto;
       margin: 0 15px;
       padding: 50px 30px 30px 30px;
     }

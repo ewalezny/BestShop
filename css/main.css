@@ -701,7 +701,7 @@ textarea {
   margin: 0 40px;
   border-bottom: 4px solid transparent;
 }
-@media (max-width: 1023px) {
+@media (min-width: 1024px) {
   .header nav a:hover {
     color: #000;
     border-color: #08A6E4;
@@ -869,11 +869,10 @@ textarea {
   padding-bottom: 120px;
 }
 .benefits__box-1, .benefits__box-2 {
-  padding: 105px 0;
+  padding: 90px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 370px;
   background: #FFF;
   border: 1px solid #E8E9ED;
   border-radius: 5px;
@@ -886,20 +885,20 @@ textarea {
   .benefits__box-1 {
     flex-direction: column-reverse;
     margin: 40px 15px 20px;
-    padding: 0 15px;
+    padding: 30px 15px;
     justify-content: center;
   }
 }
 .benefits__box-2 {
   margin: 37px 0;
-  padding: 0 70px;
+  padding: 70px;
 }
 @media (max-width: 1023px) {
   .benefits__box-2 {
     flex-direction: column;
     justify-content: center;
     margin: 20px 15px;
-    padding: 0 15px;
+    padding: 30px 15px;
   }
 }
 .benefits__box-3 {
@@ -974,7 +973,6 @@ textarea {
   }
 }
 .benefits__box__text-3 {
-  width: 623px;
   height: 370px;
   background: #FFF;
   border-radius: 5px;
@@ -986,7 +984,6 @@ textarea {
 }
 @media (max-width: 1023px) {
   .benefits__box__text-3 {
-    width: auto;
     margin: 0 15px;
     padding: 50px 30px 30px 30px;
   }
@@ -1098,7 +1095,7 @@ textarea {
   text-align: center;
   padding: 100px 0 50px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .pricing h2 {
     padding: 55px 0 15px;
   }
@@ -1109,7 +1106,7 @@ textarea {
   align-items: center;
   margin-bottom: 180px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .pricing__boxes {
     flex-direction: column;
     justify-content: center;
@@ -1127,7 +1124,7 @@ textarea {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .pricing--box {
     flex-direction: row;
     justify-content: center;
@@ -1135,7 +1132,7 @@ textarea {
     width: auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .pricing__name {
     padding-left: 45px;
   }
@@ -1154,7 +1151,7 @@ textarea {
   line-height: 4rem;
   padding: 14px 0 69px 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .pricing__ul {
     margin: 25px 15px 25px 45px;
   }
@@ -1164,7 +1161,7 @@ textarea {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .pricing ul {
     align-items: flex-start;
   }
@@ -1182,6 +1179,7 @@ textarea {
 }
 .pricing__box-3 {
   border-color: #55DFB4;
+  margin-left: 50px;
 }
 .pricing__box-3 h4 {
   color: #55DFB4;
@@ -1198,8 +1196,9 @@ textarea {
   box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.16);
   width: 405px;
   height: 500px;
+  margin-left: 50px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .pricing__box-2 {
     width: auto;
     height: 280px;

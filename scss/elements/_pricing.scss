@@ -5,7 +5,7 @@
     text-align: center;
     padding: 100px 0 50px;
 
-    @include xs {
+    @include sm {
       padding: 55px 0 15px;
     }
   }
@@ -16,7 +16,7 @@
     align-items: center;
     margin-bottom: 180px;
 
-    @include xs {
+    @include sm {
       flex-direction: column;
       justify-content: center;
       margin-bottom: 80px;
@@ -34,7 +34,7 @@
     flex-direction: column;
     align-items: center;
 
-    @include xs {
+    @include sm {
       flex-direction: row;
       justify-content: center;
       height: 250px;
@@ -43,7 +43,7 @@
   }
 
   &__name {
-    @include xs {
+    @include sm {
       padding-left: 45px;
     }
   }
@@ -65,7 +65,7 @@
   }
 
   &__ul {
-    @include xs {
+    @include sm {
       margin: 25px 15px 25px 45px;
     }
   }
@@ -75,7 +75,7 @@
     flex-direction: column;
     align-items: center;
 
-    @include xs {
+    @include sm {
       align-items: flex-start;
     }
 
@@ -96,6 +96,7 @@
 
   &__box-3 {
     border-color: $color-green;
+    margin-left: 50px;
 
     h4 {
       color: $color-green;
@@ -115,8 +116,9 @@
     box-shadow: 5px 10px 27px $color-primary-shadow;
     width: 405px;
     height: 500px;
+    margin-left: 50px;
 
-    @include xs {
+    @include sm {
       width: auto;
       height: 280px;
       margin: 55px 0;
