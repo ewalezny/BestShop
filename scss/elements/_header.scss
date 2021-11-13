@@ -46,11 +46,11 @@
       }
 
       @include xs {
-        padding: 14px 0;
-
         &:active {
           color: $color-black;
         }
+
+        padding: 14px 0;
       }
     }
   }

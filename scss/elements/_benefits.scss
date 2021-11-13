@@ -1,0 +1,239 @@
+.benefits {
+  background: $color-light-gray;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__box-1,
+  &__box-2 {
+    padding: 105px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 370px;
+    background: $color-white;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  &__box-1 {
+    margin-top: 150px;
+
+    @include xs {
+      flex-direction: column-reverse;
+      margin: 40px 15px 20px;
+      padding: 0 15px;
+      justify-content: center;
+    }
+  }
+
+  &__box-2 {
+    margin: 37px 0;
+    padding: 0 70px;
+
+    @include xs {
+      flex-direction: column;
+      justify-content: center;
+      margin: 20px 15px;
+      padding: 0 15px;
+    }
+  }
+
+  &__box-3 {
+    display: flex;
+    justify-content: space-between;
+    height: 370px;
+    margin-bottom: 150px;
+
+    @include xs {
+      flex-direction: column;
+      margin: 20px 0 40px;
+    }
+  }
+
+  h2 {
+    font-family: $font-raleway;
+    font-size: 2.25rem;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-family: $font-open-sans;
+    font-size: 1rem;
+    margin-bottom: 50px;
+
+    @include xs {
+      margin: 10px 0;
+    }
+  }
+
+  &__box__text-1 {
+    margin-left: 35px;
+    width: 416px;
+
+    @include xs {
+      width: auto;
+      margin: 0 20px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 328px;
+      height: 4px;
+      background: $color-redish;
+
+      @include xs {
+        display: none;
+      }
+    }
+  }
+
+  &__box__text-2 {
+    margin-right: 20px;
+    width: 416px;
+
+    @include xs {
+      width: auto;
+      margin: 0 20px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 328px;
+      height: 4px;
+      background: $color-primary;
+
+      @include xs {
+        display: none;
+      }
+    }
+  }
+
+  &__box__text-3 {
+    width: 623px;
+    height: 370px;
+    background: $color-white;
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 70px;
+
+    @include xs {
+      width: auto;
+      margin: 0 15px;
+      padding: 50px 30px 30px 30px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 328px;
+      height: 4px;
+      background: $color-green;
+
+      @include xs {
+        display: none;
+      }
+    }
+  }
+
+  &__box__img-1 {
+    padding-right: 110px;
+    padding-top: 100px;
+
+    @include xs {
+      padding: 30px 50px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 180px;
+      height: 180px;
+      border-radius: 41px;
+      background: $color-redish;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 50px;
+      right: 150px;
+
+      @include xs {
+        transform: scale(0.5) rotate(45deg);
+        top: -40px;
+        right: -10px;
+      }
+    }
+  }
+
+  &__box__img-2 {
+    &::before {
+      content: "";
+      display: block;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: $color-primary;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @include xs {
+        transform: scale(0.4);
+        top: -100px;
+        left: -90px;
+      }
+    }
+  }
+
+  &__box__img-1,
+  &__box__img-2,
+  &__box__img-3 {
+    position: relative;
+  }
+
+  img {
+    position: relative;
+    width: 386px;
+    height: auto;
+    margin-right: 70px;
+
+    @include xs {
+      width: 190px;
+      margin-right: 0;
+    }
+  }
+
+  &__box__img-3 {
+    background: $color-green;
+    height: 370px;
+    width: 440px;
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+
+    @include xs {
+      width: auto;
+      height: auto;
+      margin: 0 15px;
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      width: 295px;
+      height: auto;
+      margin-top: 100px;
+      margin-left: 62px;
+
+      @include xs {
+        margin: 20px auto -50px;
+      }
+    }
+  }
+}
