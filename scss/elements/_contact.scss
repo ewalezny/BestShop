@@ -1,13 +1,13 @@
 .contact__boxes {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 60px;
+  margin: 60px 0;
 
   @include sm {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 15px 45px 15px;
+    margin: 45px 15px;
   }
 }
 

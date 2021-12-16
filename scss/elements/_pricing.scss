@@ -98,6 +98,10 @@
     border-color: $color-green;
     margin-left: 50px;
 
+    @include sm {
+      margin-left: 0;
+    }
+
     h4 {
       color: $color-green;
       padding-bottom: 5px;
