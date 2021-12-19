@@ -28,15 +28,20 @@ const Calculator = function () {
         total: document.querySelector("#total-price")
     }
 
+    this.productsEvent = this.productsEvent.bind(this);
+    this.ordersEvent = this.ordersEvent.bind(this);
+    this.dropdownEvent = this.dropdownEvent.bind(this);
+    this.checkboxEvent = this.checkboxEvent.bind(this);
+
     this.addEvents();
 }
 
 Calculator.prototype.addEvents = function () {
-    this.form.products.addEventListener("input", this.productsEvent.bind(this));
-    this.form.orders.addEventListener("input", this.ordersEvent.bind(this));
-    this.form.package.addEventListener("click", this.dropdownEvent.bind(this));
-    this.form.accounting.addEventListener("change", this.checkboxEvent.bind(this));
-    this.form.terminal.addEventListener("change", this.checkboxEvent.bind(this));
+    this.form.products.addEventListener("input", this.productsEvent);
+    this.form.orders.addEventListener("input", this.ordersEvent);
+    this.form.package.addEventListener("click", this.dropdownEvent);
+    this.form.accounting.addEventListener("change", this.checkboxEvent);
+    this.form.terminal.addEventListener("change", this.checkboxEvent);
 }
 
 Calculator.prototype.updateTotal = function () {
